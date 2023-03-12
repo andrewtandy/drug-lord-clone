@@ -1,0 +1,37 @@
+.container {
+    border: 2px solid var(--header-colour);
+    display: grid;
+    grid-template-columns: 5fr 2.5fr 5fr;
+    max-width: 800px;
+    padding: 0.5rem;
+    /* width: 400px; */
+}
+
+.panel {
+    display: grid;
+    padding: 0.5rem;
+    grid-row-gap: 1rem;
+}
+
+.information {
+    grid-column: span 3;
+    /* height: 1 00px; */
+}
+
+.element {
+    border: 1px solid white;    
+    padding: 1rem;
+}
+
+.element-header {
+    background-color: var(--bg-colour);
+    position: relative;
+    top: -1.5rem;
+    left: -0.7rem;
+    padding: .3rem;
+}
+
+.element-content {
+    position: relative;
+    top: -.5rem;
+}
