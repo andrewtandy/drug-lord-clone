@@ -17,9 +17,11 @@ Andrew Tandy 2023
 
 - rough layout copy of game using css (see images for comparison)
 
-Drug Lord
-![image](https://user-images.githubusercontent.com/54472417/224562154-dd902e96-3151-41a9-9f10-3ff3dae5e0f5.png)
+| ![image](https://user-images.githubusercontent.com/54472417/224562154-dd902e96-3151-41a9-9f10-3ff3dae5e0f5.png) |
+|:--:|
+| <b>Drug Lord</b> |
 
-Drug Lord Clone
-![image](https://user-images.githubusercontent.com/54472417/224562376-0d7c53b0-b7ec-40c9-9cfe-e0c0b9facabe.png)
+| ![image](https://user-images.githubusercontent.com/54472417/224562376-0d7c53b0-b7ec-40c9-9cfe-e0c0b9facabe.png) |
+|:--:|
+| <b>Drug Lord Clone</b> |
 
