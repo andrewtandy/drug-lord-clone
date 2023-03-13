@@ -7,8 +7,9 @@ Andrew Tandy 2023
 - Need to refactor at later date if possible into re-useable composable for other elements
 - Need to style data view of "The Market"
 
-She Uglee! But data from JSON pulled through!
-![image](https://user-images.githubusercontent.com/54472417/224845030-16f760aa-6e9b-4d1f-8c97-03b4e4256853.png)
+| ![image](https://user-images.githubusercontent.com/54472417/224845030-16f760aa-6e9b-4d1f-8c97-03b4e4256853.png) |
+|:--:|
+| <b>She Uglee! But data from JSON pulled through!</b> |
 
 12.03.23
 - create project
