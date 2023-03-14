@@ -1,6 +1,21 @@
 Drug Lord Clone project
 Andrew Tandy 2023
 
+14.03.23
+- Basic styling of imported data in The Market view
+- Refactored code to be re-used in other windows as composable, now creates a table taking the element id for div container to load the JSON data file into (could be used for nested options too in the future)
+-  Began implementing functionality into buttons, not as dynamic yet, but producing console logs depending on action taken
+
+| ![image](https://user-images.githubusercontent.com/54472417/225149256-eeb030f0-50f8-4611-b471-469847983a31.png) |
+|:--:|
+| <b>Red outlines show basic styling of data as table</b> |
+
+| ![image](https://user-images.githubusercontent.com/54472417/225149775-809d5aff-81e7-420d-87e8-b6086d52a309.png) |
+|:--:|
+| <b>Basic console logs of button actions</b> |
+
+
+
 13.03.23
 - Created pseudo marketplace data and stored as JSON file
 - Imported data and created logic so it is viewable in "The Market" window

@@ -35,3 +35,15 @@
     position: relative;
     top: -.5rem;
 }
+
+.table-row {
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr;
+    padding: 0.2rem;
+    text-transform: capitalize;
+}
+
+.table-header {
+    background-color: var(--text-colour2);
+    color: var(--text-colour3);
+}
