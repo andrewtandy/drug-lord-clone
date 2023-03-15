@@ -1,6 +1,12 @@
 Drug Lord Clone project
 Andrew Tandy 2023
 
+15.03.23
+- Refactored button code to event listen to all button clicks and process logic dependant on button element id
+- Added some simple hover CSS to items in tables
+
+Quieter day today on coding. Will work on adding some further logic to the buttons on the buy and sell that updates either side The Market and Inventory windows next and have begun looking into local storage.
+
 14.03.23
 - Basic styling of imported data in The Market view
 - Refactored code to be re-used in other windows as composable, now creates a table taking the element id for div container to load the JSON data file into (could be used for nested options too in the future)

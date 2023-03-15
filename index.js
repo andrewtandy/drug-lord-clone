@@ -1,27 +1,17 @@
 import data from './assets/data/market.json' assert { type: 'json' };
 
 import { createTable } from './composables/productTable.js';
-import { itemAction } from './composables/itemAction.js';
+import { buttonAction } from './composables/buttonAction.js';
 
 createTable('market-list', data);
 createTable('inventory', data);
 
-// TODO: refactor the below button code (consider actions such as vault and ship...)
+const buttons = document.getElementsByTagName("button")
 
-const buyButton = document.querySelector('#buy-btn')
-const sellButton = document.querySelector('#sell-btn')
-const dumpButton = document.querySelector('#dump-btn')
-
-
-buyButton.addEventListener("click", function() {
-    itemAction('Cocaine', 'Buy')
-})
-
-sellButton.addEventListener("click", function() {
-    itemAction('Cocaine', 'Sell')
-})
-
-dumpButton.addEventListener("click", function() {
-    itemAction('Cocaine', 'Dump')
-})
+for(let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function() {
+        let buttonId = buttons[i].id
+        buttonAction('Cocaine', buttonId)
+    })
+}
 

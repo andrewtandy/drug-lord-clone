@@ -47,3 +47,10 @@
     background-color: var(--text-colour2);
     color: var(--text-colour3);
 }
+
+.table-item:hover {
+    cursor: pointer;
+    background-color: var(--text-colour1);
+    color: var(--text-colour3);
+
+}
