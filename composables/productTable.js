@@ -41,8 +41,8 @@ export function createTable(containerId, data) {
             }
         })
     
-        // Set the item row's id to the product id (useful for later game logic and Dom access)
-        itemRow.id = item.id
+        // Set the item row's id to the container and product id (useful for later game logic and Dom access)
+        itemRow.id = `${containerId}-${item.id}`
         
         // Add full item row to "The Market" container
         domContainer.appendChild(itemRow)

@@ -44,7 +44,7 @@
 }
 
 .table-header {
-    background-color: var(--text-colour2);
+    background-color: var(--sub-header-colour);
     color: var(--text-colour3);
 }
 
@@ -52,5 +52,13 @@
     cursor: pointer;
     background-color: var(--text-colour1);
     color: var(--text-colour3);
+}
 
+.selected {
+    border: 1px solid var(--header-colour);
+}
+
+.highlighted {
+    background-color: var(--text-colour2);
+    color: var(--text-colour3);
 }

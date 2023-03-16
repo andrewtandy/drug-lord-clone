@@ -1,6 +1,15 @@
 Drug Lord Clone project
 Andrew Tandy 2023
 
+16.03.23
+- Created some logic to event listen on items in market and inventory window, clicking item will highlight item in alternate window
+
+| ![image](https://user-images.githubusercontent.com/54472417/225759890-98322f34-376e-45c3-b3bc-3bef3a01fe72.png) |
+|:--:|
+| ![image](https://user-images.githubusercontent.com/54472417/225760058-cbe9ea3f-a0fc-48ff-979d-e15f1d1d4e45.png) |
+|:--:|
+| <b>Selecting item will highlight in both windows differently</b> |
+
 15.03.23
 - Refactored button code to event listen to all button clicks and process logic dependant on button element id
 - Added some simple hover CSS to items in tables
