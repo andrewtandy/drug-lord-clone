@@ -1,10 +1,20 @@
 import data from './assets/data/market.json' assert { type: 'json' };
+import status from './assets/data/status.json' assert { type: 'json' };
+import { setLocal, getLocal } from './composables/utilities/handleLocalStorage.js';
 
 import { createTable } from './composables/productTable.js';
+import { generateStatusWindow } from './composables/status.js';
 import { buttonAction } from './composables/buttonAction.js';
+import { generateLocalMarket } from './composables/localMarket.js';
+import { buyProduct } from './composables/products/buyProduct.js';
+import { sellProduct } from './composables/products/sellProduct.js';
 
-createTable('market-list', data);
+generateLocalMarket()
+generateStatusWindow()
+
 createTable('inventory', data);
+
+setLocal('status',status)
 
 
 // Functions for options column buttons - need refactoring and separating
@@ -13,7 +23,8 @@ const buttons = document.getElementsByTagName("button")
 for(let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function() {
         let buttonId = buttons[i].id
-        buttonAction('Cocaine', buttonId)
+        let itemSelected = localStorage.getItem("item-selected")
+        buttonAction(itemSelected, buttonId)
     })
 }
 
@@ -27,7 +38,11 @@ for(let i = 0; i < items.length; i++) {
     items[i].addEventListener("click", function() {
         removeClass(items, "selected")
         addClass(items[i], "selected")
+        setLocal("selected-item", items[i].id)
         highlightAlternate(items[i])
+        buyProduct()
+        sellProduct()
+
     })
 }
 
@@ -40,16 +55,19 @@ function highlightAlternate(element) {
     let marketListItem = document.getElementById(`market-list-${itemNumber}`)
     let inventoryListItem = document.getElementById(`inventory-${itemNumber}`)
 
-    switch(elParent.id) {
-        case 'inventory':
-            removeClass(items, "highlighted")
-            addClass(marketListItem, "highlighted")
-            break
-        case 'market-list':
-            removeClass(items, "highlighted")
-            addClass(inventoryListItem, "highlighted")
-            break
+    if(inventoryListItem && marketListItem) {
+        switch(elParent.id) {
+            case 'inventory':
+                removeClass(items, "highlighted")
+                addClass(marketListItem, "highlighted")
+                break
+            case 'market-list':
+                removeClass(items, "highlighted")
+                addClass(inventoryListItem, "highlighted")
+                break
+        }        
     }
+
 }
 
 function addClass(element, cssClass) {
@@ -63,4 +81,3 @@ function removeClass(elements, cssClass) {
         elements[i].classList.remove(cssClass)
     }
 }
-

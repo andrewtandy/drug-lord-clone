@@ -1,6 +1,14 @@
 Drug Lord Clone project
 Andrew Tandy 2023
 
+19.03.23
+- Quite a bit done since last update
+- Market place randomises data from a JSON file
+- Refactored some button code
+- Highlighting working semi-correctly
+- Buy/Sell buttons disabled and enabled dependant on conditions
+- Trying to get a modal to work for Buy/Sell actions
+
 16.03.23
 - Created some logic to event listen on items in market and inventory window, clicking item will highlight item in alternate window
 

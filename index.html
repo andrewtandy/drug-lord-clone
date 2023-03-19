@@ -16,7 +16,7 @@
     
     <h1>Drug Lord Clone</h1>
 
-    <div class="container">
+    <div class="container" id="container">
         <div class="information panel">
             <div class="element">
                 <span class="element-header">Information</span>
@@ -40,8 +40,8 @@
             <div class="element">
                 <span class="element-header">Action</span>
                 <div class="element-content action-buttons">
-                    <button id="buy">Buy >></button>
-                    <button id="sell">Sell <<</button>
+                    <button id="buy" disabled>Buy >></button>
+                    <button id="sell" disabled>Sell <<</button>
                     <button id="dump">Dump...</button>
                     <button>Places...</button>
                     <button>Info...</button>
@@ -84,12 +84,25 @@
             <div class="element">
                 <span class="element-header">Status</span>
                 <div class="elemet-content">
-                    Graphs and info here
+                    <div class="status-window" id="status-window">
+                    </div>
                 </div>
             </div>
 
 
         </div>
-    </div>
+    </div>    
+
+    
 </body>
+
+<!-- Define the modal template -->
+<template id="modal-template">
+    <dialog class="modal">
+      <p>This is a modal dialog.</p>
+      <button class="close">Close</button>
+    </dialog>
+  </template>
+
+
 </html>

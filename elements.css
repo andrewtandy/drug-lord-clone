@@ -15,7 +15,6 @@
 
 .information {
     grid-column: span 3;
-    /* height: 1 00px; */
 }
 
 .element {
@@ -61,4 +60,52 @@
 .highlighted {
     background-color: var(--text-colour2);
     color: var(--text-colour3);
+}
+
+/* Status Window Styling */
+.status-window {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-gap: .2rem;
+}
+
+.stat-panel {
+    border: 1px solid var(--info-colour);
+    padding: 0.3rem;
+}
+
+.stat-label {
+    text-transform: capitalize;
+}
+
+.stat-day, .stat-cash, .stat-bank, .stat-debt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-location, .stat-health {
+    grid-column: span 3;
+}
+
+.stat-rank, .stat-cash, .stat-bank, .stat-debt {
+    grid-column: span 2;
+}
+
+.stat-graph {
+    grid-row: span 3;
+}
+
+/* modal styling */
+
+.modal {
+    background-color: var(--bg-colour);
+    color: var(--text-colour1);
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; */
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr 2fr;
+    border: 1px solid var(--header-colour);
 }

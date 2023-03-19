@@ -1,0 +1,70 @@
+[
+    {
+        "id":1,
+        "name": "Cocaine"
+    },
+    {
+        "id":2,
+        "name": "Crack"
+    },
+    {
+        "id":3,
+        "name": "Ecstasy"
+    },
+    {
+        "id":4,
+        "name": "Hashish"
+    },
+    {
+        "id":5,
+        "name": "Heroin"
+    },
+    {
+        "id":6,
+        "name": "Ice"
+    },
+    {
+        "id":7,
+        "name": "Kat"
+    },
+    {
+        "id":8,
+        "name": "LSD"
+    },
+    {
+        "id":9,
+        "name": "MDA"
+    },
+    {
+        "id":10,
+        "name": "Morphine"
+    },
+    {
+        "id":11,
+        "name": "Mushrooms"
+    },
+    {
+        "id":12,
+        "name": "Opium"
+    },
+    {
+        "id":13,
+        "name": "PCP"
+    },
+    {
+        "id":14,
+        "name": "Peyote"
+    },
+    {
+        "id":15,
+        "name": "Pot"
+    },
+    {
+        "id":16,
+        "name": "Special K"
+    },
+    {
+        "id":17,
+        "name": "Speed"
+    }
+]

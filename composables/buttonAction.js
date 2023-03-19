@@ -1,3 +1,5 @@
+import { displayPrompt } from "./utilities/displayPrompt.js"
+
 export function buttonAction(item, action) {
     switch(action) {
         default:
@@ -5,6 +7,7 @@ export function buttonAction(item, action) {
             break
         case 'buy':
             console.log(`ohhh you come here to buy suttin!? ${item}`)
+            displayPrompt()
             break
         case 'sell':
             console.log(`huh, let's take a look then ${item}`)

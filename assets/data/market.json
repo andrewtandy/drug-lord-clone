@@ -6,25 +6,25 @@
     "price": 49451   
     },
     {
-    "id": 2,
+    "id": 3,
     "name": "Ecstasy",
     "qty": 8,
     "price": 2625
     },
     {
-    "id": 3,
+    "id": 7,
     "name": "Kat",
     "qty": 9,
     "price": 542   
     },
     {
-    "id": 4,
+    "id": 8,
     "name": "LSD",
     "qty": 3,
     "price": 1354
     },
     {
-        "id": 5,
+        "id": 10,
         "name": "Morphine",
         "qty": 6,
         "price": 1858
