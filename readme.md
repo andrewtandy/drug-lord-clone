@@ -1,6 +1,14 @@
 Drug Lord Clone project
 Andrew Tandy 2023
 
+25.03.23
+- Attempting to copy/style modal to match action dialogs
+
+| ![image](https://user-images.githubusercontent.com/54472417/227746572-cea86c34-e822-4a90-b585-8aeecf98a1fa.png)
+![2023-03-19_14-49-11](https://user-images.githubusercontent.com/54472417/227746575-83a82eea-78e5-4c8c-a880-093c75380e26.png) |
+|:--:|
+| Still needs a bit of work, but slowly getting there! |
+
 19.03.23
 - Quite a bit done since last update
 - Market place randomises data from a JSON file

@@ -1,15 +1,16 @@
 export function displayPrompt() {
-    const modalTemplate = document.querySelector('#modal-template')
-    const modal = modalTemplate.content.cloneNode(true)
+    // const modalTemplate = document.querySelector('#modal-template')
+    // const modal = modalTemplate.content.cloneNode(true)
 
-    document.body.appendChild(modal)
-    const dialog = document.querySelector('.modal')
+    // document.body.appendChild(modal)
+    const dialog = document.getElementById("modal")
     dialog.showModal()
 
-    const closeButton = dialog.querySelector('.close')
+    const closeButton = document.getElementById("modal-close")
     closeButton.addEventListener('click', () => {
-        dialog.close()
-        document.body.removeChild(modal)
+        console.log('button clicked')
+        dialog.close() 
+        // document.body.removeChild(modal)
     })
     
 }

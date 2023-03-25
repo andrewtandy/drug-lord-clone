@@ -97,15 +97,60 @@
 
 /* modal styling */
 
-.modal {
+dialog {
     background-color: var(--bg-colour);
     color: var(--text-colour1);
-    /* position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999; */
+    max-width: 25rem;
+    border: 1px solid var(--header-colour);    
+    position: fixed;
+    top: -20%;
+    padding: 0;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+dialog::backdrop {
+    background-color: black;
+    opacity: 0.6;
+}
+
+.modal {
     display: grid;
-    grid-template-rows: 1fr 4fr 2fr 2fr;
-    border: 1px solid var(--header-colour);
+    grid-template-rows: 1fr 4fr 2fr 1fr;
+    gap: 1em;
+    /* padding: 1rem; */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header-colour);
+    /* padding: 0; */
+}
+
+.modal-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.modal-action button {
+    width: 6rem;
+    /* padding: .5rem; */
+}
+
+.modal-close {
+    cursor: pointer;
+}
+
+/* Form element styling */
+
+.qty-width {
+    width: 6rem;
 }

@@ -19,6 +19,8 @@
 body {
     background-color: var(--bg-colour);
     color: var(--text-colour1);
+    display: grid;
+    place-content: center;
 }
 
 h1 {

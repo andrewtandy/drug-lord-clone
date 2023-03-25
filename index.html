@@ -91,18 +91,33 @@
 
 
         </div>
+        
     </div>    
-
+    
+    <dialog id="modal">
+        <div class="modal">
+            <div class="modal-header">
+                <span class="modal-title">
+                    <span><img src="assets\images\pill.png" alt="" width="24px"></span>
+                    <span>Buying Kat</span>
+                </span>
+                <span class="modal-close" id="modal-close">X</span>
+            </div>
+            <div class="element">
+                <span class="element-header">Message</span>
+                <div class="element-content">Kat is currently selling for $424 per unit. With your available funds, you can buy 4 units.</div>
+            </div>
+            <div class="modal-input element">
+                <span>How many do you wish to buy?</span>
+                <input type="number" name="how-many" id="productQty" class="qty-width">
+            </div>
+            <div class="modal-action">
+                <button>Ok</button>
+                <button>Cancel</button>
+            </div>
+        </div>
+      </dialog>
     
 </body>
-
-<!-- Define the modal template -->
-<template id="modal-template">
-    <dialog class="modal">
-      <p>This is a modal dialog.</p>
-      <button class="close">Close</button>
-    </dialog>
-  </template>
-
 
 </html>
