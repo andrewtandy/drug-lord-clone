@@ -97,23 +97,27 @@
     <dialog id="modal">
         <div class="modal">
             <div class="modal-header">
-                <span class="modal-title">
-                    <span><img src="assets\images\pill.png" alt="" width="24px"></span>
-                    <span>Buying Kat</span>
+                <span class="modal-title" id="modal-title">
+                    <span><img src="assets\images\pill.png" alt="" class="modal-icon"></span>
+                    <!-- <span>Buying Kat</span> -->
                 </span>
-                <span class="modal-close" id="modal-close">X</span>
+                <span class="modal-close" id="modal-close">
+                    <span><img src="assets\images\close.png" alt="" class="modal-icon"></span>
+                </span>
             </div>
-            <div class="element">
-                <span class="element-header">Message</span>
-                <div class="element-content">Kat is currently selling for $424 per unit. With your available funds, you can buy 4 units.</div>
-            </div>
-            <div class="modal-input element">
-                <span>How many do you wish to buy?</span>
-                <input type="number" name="how-many" id="productQty" class="qty-width">
-            </div>
-            <div class="modal-action">
-                <button>Ok</button>
-                <button>Cancel</button>
+            <div class="modal-content">
+                <div class="element" id="modal-content">
+                    <span class="element-header">Message</span>
+                    <!-- <div class="element-content">Kat is currently selling for $424 per unit. With your available funds, you can buy 4 units.</div> -->
+                </div>
+                <div class="modal-input element" id="modal-input">
+                    <span>How many do you wish to buy?</span>
+                    <!-- <input type="number" name="how-many" id="productQty" class="qty-width"> -->
+                </div>
+                <div class="modal-action">
+                    <button>Ok</button>
+                    <button id="modal-cancel">Cancel</button>
+                </div>
             </div>
         </div>
       </dialog>

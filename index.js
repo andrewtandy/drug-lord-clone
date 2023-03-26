@@ -1,32 +1,27 @@
 import data from './assets/data/market.json' assert { type: 'json' };
 import status from './assets/data/status.json' assert { type: 'json' };
+import inventory from './assets/data/inventory.json' assert { type: 'json'};
+
 import { setLocal, getLocal } from './composables/utilities/handleLocalStorage.js';
 
 import { createTable } from './composables/productTable.js';
 import { generateStatusWindow } from './composables/status.js';
-import { buttonAction } from './composables/buttonAction.js';
+import { buttonListener } from './composables/utilities/buttonListener.js';
 import { generateLocalMarket } from './composables/localMarket.js';
 import { buyProduct } from './composables/products/buyProduct.js';
 import { sellProduct } from './composables/products/sellProduct.js';
+import { productInfo } from './composables/utilities/productInfo.js';
 
 generateLocalMarket()
 generateStatusWindow()
 
+// function to check what button has been pressed and process action related
+buttonListener()
+
 createTable('inventory', data);
 
 setLocal('status',status)
-
-
-// Functions for options column buttons - need refactoring and separating
-const buttons = document.getElementsByTagName("button")
-
-for(let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", function() {
-        let buttonId = buttons[i].id
-        let itemSelected = localStorage.getItem("item-selected")
-        buttonAction(itemSelected, buttonId)
-    })
-}
+setLocal('inventory', inventory)
 
 // Functions for The Market and Inventory item selection - need refactoring and separating
 
@@ -38,7 +33,8 @@ for(let i = 0; i < items.length; i++) {
     items[i].addEventListener("click", function() {
         removeClass(items, "selected")
         addClass(items[i], "selected")
-        setLocal("selected-item", items[i].id)
+        const prodInfo = productInfo(items[i].id)
+        setLocal("selected-item", prodInfo)
         highlightAlternate(items[i])
         buyProduct()
         sellProduct()

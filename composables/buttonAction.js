@@ -1,4 +1,5 @@
-import { displayPrompt } from "./utilities/displayPrompt.js"
+import { modalShow } from "./utilities/modalShow.js"
+import { populateModal } from "./utilities/populateModal.js"
 
 export function buttonAction(item, action) {
     switch(action) {
@@ -7,7 +8,8 @@ export function buttonAction(item, action) {
             break
         case 'buy':
             console.log(`ohhh you come here to buy suttin!? ${item}`)
-            displayPrompt()
+            modalShow()
+            populateModal(item)
             break
         case 'sell':
             console.log(`huh, let's take a look then ${item}`)

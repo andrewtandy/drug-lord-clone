@@ -1,6 +1,13 @@
 Drug Lord Clone project
 Andrew Tandy 2023
 
+26.03.23
+- Finished styling the modal dialog
+- Trying out some font and colour styles
+- Written logic for buying products; checks if able to afford, store and then availability to buy
+- Modal is populated with product information relating to action
+- Only works on Buy button, need to refactor code to work on Sell and Dump actions
+
 25.03.23
 - Attempting to copy/style modal to match action dialogs
 
