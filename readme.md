@@ -5,6 +5,12 @@ Andrew Tandy 2023
 - Able to update inventory storage using dump button as proof of concept, need to expand with buy/sell buttons
 - Buy/Sell/Dump buttons only appear when able to perform such an action
 - Refactored a lot of code and moved stuff around a bit
+- Styling finished on modal dialog
+
+| ![image](https://user-images.githubusercontent.com/54472417/228973138-b0f65df4-cd76-4c71-a41c-b560d33a9e2b.png)
+|
+|:--:|
+| <b>Looks more akin to a system (windows at least!) dialog box</b> |
 
 26.03.23
 - Finished styling the modal dialog
