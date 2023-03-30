@@ -167,6 +167,7 @@ dialog::backdrop {
 .modal-input {
     display: flex;
     justify-content: space-between;
+    gap: 1em;
 }
 
 .modal-action {
@@ -185,5 +186,5 @@ dialog::backdrop {
 /* Form element styling */
 
 .qty-width {
-    width: 6rem;
+    width: 4rem;
 }

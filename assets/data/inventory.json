@@ -1,7 +1,26 @@
-[
-    {
-        "name":"Your pants pocket",
-        "limit":10,
-        "stored":0
-    }
-]
+{
+    "name":"Your pants pocket",
+    "limit":10,
+    "products": [
+        {
+            "id":1,
+            "name":"Cocaine",
+            "qty":1,
+            "price":200
+        },
+        {
+            "id":4,
+            "name":"Hashish",
+            "qty":4,
+            "price":450
+        },
+        {
+            "id":8,
+            "name":"LSD",
+            "qty":2,
+            "price":680
+        }
+        
+    ],
+    "stored":0
+}

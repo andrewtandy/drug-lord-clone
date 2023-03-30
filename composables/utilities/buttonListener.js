@@ -1,18 +1,23 @@
 import { buttonAction } from "../buttonAction.js"
+import { buyProduct } from "../products/buyProduct.js"
+import { dumpProduct } from "../products/dumpProduct.js"
+import { sellProduct } from "../products/sellProduct.js"
+import { getLocal } from "./handleLocalStorage.js"
 
 // Listen to which button has been pressed from options column
-export function buttonListener() {
-    const buttons = document.getElementsByTagName("button")
-    
-    for(let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener("click", function() {
-            // which button has been pressed - by id
-            let buttonId = buttons[i].id
-            // from local storage what item is currently selected
-            let itemSelected = localStorage.getItem("selected-item")
-            // process action on button pressed, send item data
+export function buttonListener() {   
+    const buttons = document.querySelectorAll("button")
+    buyProduct()
+    sellProduct()
+    dumpProduct()
+
+    buttons.forEach(element => {
+        element.addEventListener('click', () => {
+            const buttonId = element.id
+            const itemSelected = getLocal("selected-item")
+
             buttonAction(itemSelected, buttonId)
         })
-    }
+    })
 }
 

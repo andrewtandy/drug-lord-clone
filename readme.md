@@ -1,6 +1,11 @@
 Drug Lord Clone project
 Andrew Tandy 2023
 
+30.03.23
+- Able to update inventory storage using dump button as proof of concept, need to expand with buy/sell buttons
+- Buy/Sell/Dump buttons only appear when able to perform such an action
+- Refactored a lot of code and moved stuff around a bit
+
 26.03.23
 - Finished styling the modal dialog
 - Trying out some font and colour styles

@@ -1,10 +1,8 @@
 import { getLocal } from "../utilities/handleLocalStorage.js";
-
 import { canBuy } from "./canBuy.js";
 
-let buyButton = document.getElementById("buy")
-
 export function buyProduct() {
+    const buyButton = document.getElementById("buy")
     // set the buy button to disabled as default
     buyButton.disabled = true
 
